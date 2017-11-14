@@ -1,6 +1,21 @@
 %HW4
 %% 
 % Problem 1. 
+%GB Comments:
+1a 100
+1b 100
+1c 100
+1d 25 Incorrect plot and with no explanation of the result as the question asks. The plot provided in the code produces a graph with the mean along the x-axis and and standard deviation on the y-axis. To address the question, there should have been two plots. One with mean intensity as a function of the circle size and the second with standard deviation values as a function of circle size. 
+2a. 50. Output avi only displays the nuclear label. Need to turn file into a composite image to view both channels at once. 
+2b. 70 Output tiffs were missing the nuclear label and the AVI output is blank. Also, the code does not make a max intensity projection in the Z direction. Currently the code is normalizing to the max for 1 plane image. 
+3a. 50 In a max intensity projection you want to grab the max intensity in the xy plane across all Z sections from a single time point. It appears you are iterating the loop (k) 19 times, which is the time domain and not the Zdomain (6 ). Additionally It does not appear that you are retaining the highest intensity pixels once iterating. 
+3b 100 Again, you are iterating over the time domain but I won’t take points off for it here. 
+3c 100 
+3d 100
+3e 100 Again, you are iterating over the time domain but I won’t take points off for it here.
+4a. 100 Your smooth_sub function is not being called correctly because your variables are undefined. 
+4b. 100
+ Overall = 83
 
 % 1. Write a function to generate an 8-bit image of size 1024x1024 with a random value 
 % of the intensity in each pixel. Call your image rand8bit.tif. 
